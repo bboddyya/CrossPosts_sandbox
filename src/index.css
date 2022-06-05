@@ -1,0 +1,38 @@
+@import url("https://fonts.googleapis.com/css2?family=Barlow:wght@400;600;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Lora&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap");
+html {
+  height: 100%;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  height: 100vh;
+
+  width: 100%;
+  background-color: #e8f7fc;
+  font-family: "Barlow", sans-serif;
+  box-sizing: border-box;
+  background: linear-gradient(
+      55deg,
+      hsl(204deg 99% 71%) 0%,
+      hsl(204deg 95% 72%) 3%,
+      hsl(205deg 91% 73%) 7%,
+      hsl(205deg 86% 74%) 11%,
+      hsl(206deg 81% 75%) 16%,
+      hsl(206deg 76% 76%) 21%,
+      hsl(207deg 70% 77%) 27%,
+      hsl(207deg 65% 77%) 33%,
+      hsl(208deg 58% 78%) 41%,
+      hsl(208deg 52% 79%) 49%,
+      hsl(209deg 45% 79%) 58%,
+      hsl(209deg 38% 80%) 67%,
+      hsl(210deg 30% 80%) 77%,
+      hsl(211deg 23% 81%) 86%,
+      hsl(213deg 15% 81%) 94%,
+      hsl(219deg 6% 81%) 99%,
+      hsl(0deg 2% 82%) 100%
+    )
+    no-repeat;
+}

@@ -1,0 +1,141 @@
+.postWrapper {
+  max-width: 88%;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-direction: column;
+  height: 100%;
+  font-family: "Lato", sans-serif;
+  align-content: stretch;
+}
+
+.post {
+  display: flex;
+  background-color: rgba(255, 255, 255, 0.8);
+  min-height: 255px;
+  width: 40%;
+  border-radius: 20px;
+  padding: 20px;
+  margin-top: 30px;
+  margin-bottom: 30px;
+  box-shadow: 8px 10px 23px 4px rgb(6 14 21 / 20%);
+  overflow: hidden;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  justify-content: space-evenly;
+}
+
+.postTitle {
+  word-wrap: break-word;
+  width: 97%;
+  font-size: 25px;
+  margin-left: 20px;
+  margin-right: 5px;
+}
+
+.postDate {
+  margin-left: 20px;
+  word-spacing: 2px;
+  color: rgb(142, 142, 142);
+  margin-bottom: 13px;
+}
+
+.likesShareRepost {
+  word-spacing: 2px;
+  margin-left: 20px;
+  color: rgb(142, 142, 142);
+  font-weight: 300;
+}
+
+.likes,
+.replies {
+  margin-right: 16px;
+}
+
+strong {
+  color: black;
+}
+
+.postHeader {
+  font-weight: 700;
+  font-size: 18px;
+  margin-left: 40px;
+  margin-bottom: 25px;
+  margin-top: 20px;
+}
+@media (max-width: 1620px) {
+  .post {
+    min-height: 230px;
+  }
+  .postHeader {
+    font-size: 15px;
+  }
+
+  .postTitle {
+    font-size: 20px;
+  }
+}
+
+@media (max-width: 1300px) {
+  .post {
+    min-height: 220px;
+    padding: 10px;
+  }
+  .postHeader {
+    font-size: 12px;
+    margin-top: 15px;
+    height: 10px;
+  }
+
+  .postTitle {
+    font-size: 17px;
+  }
+}
+
+@media (max-width: 1157px) {
+  .post {
+    min-height: 215px;
+    padding: 10px;
+  }
+  .postHeader {
+    font-size: 11px;
+    margin-top: 14px;
+    height: 9px;
+  }
+
+  .postTitle {
+    font-size: 16px;
+  }
+}
+
+@media (max-width: 1050px) {
+  .post {
+    min-height: 213px;
+    padding: 10px;
+  }
+  .postHeader {
+    font-size: 10px;
+    margin-top: 14px;
+    height: 8px;
+  }
+
+  .postTitle {
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 911px) {
+  .post {
+    min-height: 210px;
+    padding: 10px;
+  }
+  .postHeader {
+    font-size: 9px;
+    margin-top: 14px;
+    height: 8px;
+  }
+
+  .postTitle {
+    font-size: 13px;
+  }
+}

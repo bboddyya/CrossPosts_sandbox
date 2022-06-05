@@ -1,0 +1,70 @@
+.profileWrapper {
+  width: 88%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  height: 100%;
+  font-family: "Lato", sans-serif;
+}
+
+.avatar {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-right: 10px;
+  border: 3px solid white;
+  border-radius: 50%;
+  padding: 50px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.avatar:hover {
+  border: 3px solid rgb(112, 170, 246);
+}
+
+.lnr-user {
+  font-size: 80px;
+  color: white;
+}
+
+.inputWrapper {
+  display: flex;
+}
+.nameInput {
+  outline: 0;
+  border: none;
+  width: 80%;
+  height: 40px;
+  font-size: 30px;
+  background-color: transparent;
+  padding: 0px;
+  outline: 0;
+  color: white;
+  border: none;
+  border-bottom: 2px rgb(255, 255, 255) solid;
+  transition: all 0.5s ease-out;
+}
+
+.nameInput::placeholder {
+  color: white;
+  text-align: center;
+}
+
+.nameInput:focus {
+  /* border-bottom: 2px rgb(108, 196, 254, 0.9); */
+  border-bottom: 2px rgb(112, 170, 246) solid;
+}
+
+.lnr-checkmark-circle {
+  font-size: 35px;
+  color: white;
+  margin-left: 4px;
+  cursor: pointer;
+  transition: all 0.3s ease-out;
+}
+
+.lnr-checkmark-circle:hover {
+  color: rgb(112, 170, 246);
+}

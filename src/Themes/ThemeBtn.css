@@ -1,0 +1,19 @@
+.themeWrapper {
+  position: absolute;
+  top: 20px;
+  margin-left: 30px;
+
+  background: transparent;
+}
+
+.themeWrapper button {
+  background: transparent;
+  box-shadow: none;
+}
+.lnr-moon {
+  color: rgb(14, 162, 253);
+}
+
+.lnr-sun {
+  color: rgb(14, 162, 253);
+}

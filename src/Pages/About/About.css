@@ -1,0 +1,31 @@
+.aboutWrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  flex: 6 auto;
+  width: 87%;
+  word-wrap: break-word;
+  overflow: hidden;
+  font-family: "Barlow", sans-serif;
+}
+
+h1 {
+  color: white;
+  font-size: 50px;
+  border-bottom: 2px solid rgb(112, 170, 246);
+}
+
+.aboutTitle {
+  width: 80%;
+  color: white;
+  font-size: 40px;
+  text-align: center;
+  line-height: 3.5vw;
+}
+
+.el {
+  font-weight: 700;
+  color: #4eaceae6;
+  border-bottom: solid 2px rgb(112, 170, 246);
+}
