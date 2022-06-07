@@ -8,7 +8,7 @@ function Profile() {
   return (
     <div className="profileWrapper">
       <div className="avatar">
-        <span className="lnr lnr-user"></span>
+        <span className="lnr lnr-user" />
       </div>
       <div className="inputWrapper">
         <input
@@ -20,7 +20,7 @@ function Profile() {
           }}
         />
         <div className="check">
-          <span className="lnr lnr-checkmark-circle"></span>
+          <span className="lnr lnr-checkmark-circle" />
         </div>
       </div>
     </div>

@@ -27,8 +27,12 @@ function Post() {
                 style={darkMode ? themeColor.post : null}
               >
                 <div className="headerWrapper">
-                  <div className="picture">
-                    {picture && <img src={picture} alt="" />}
+                  <div className="pictureWrapper">
+                    {picture ? (
+                      <img src={picture} alt="" className="picture" />
+                    ) : (
+                      <span className="lnr lnr-user profilePicture" />
+                    )}
                   </div>
                   <div className="postHeader">{author}</div>
                 </div>
