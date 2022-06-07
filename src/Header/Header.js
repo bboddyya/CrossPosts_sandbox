@@ -5,13 +5,16 @@ import TaskButton from "./TaskButton";
 import mops from "../img/Cross Posts.png";
 import { Link } from "react-router-dom";
 import { Context } from "../Context";
+import ThemeSwitch from "../Themes/ThemeSwitch";
 
 function Header() {
   const { themeColor, darkMode } = useContext(Context);
   return (
     <header style={darkMode ? themeColor.header : null}>
+      <ThemeSwitch />
       <Link to="/about">
-        <img src={mops} />
+        {/* <img src={mops} /> */}
+        <div className="crossTitle">Cross Posts</div>
       </Link>
       <TaskButton />
       <ProfileButton />

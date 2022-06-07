@@ -32,12 +32,12 @@ function App() {
         defaultPosts,
         themeColor,
         darkMode,
-        setDarkMode
+        setDarkMode,
       }}
     >
       <div className="App" style={darkMode ? themeColor.body : null}>
         <Header />
-        <ThemeSwitch />
+
         <Routes>
           <Route path="/" element={<About />} />
           <Route path="/about" element={<About />} />

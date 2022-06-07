@@ -5,7 +5,7 @@ import { Context } from "../../../Context";
 import { Link } from "react-router-dom";
 
 function Input() {
-  const { tasks, setTasks, name, title, setTitle, postValue } =
+  const { tasks, setTasks, name, title, setTitle, themeColor, darkMode } =
     useContext(Context);
 
   function addPost() {
@@ -16,7 +16,6 @@ function Input() {
         id: Date.now(),
         author: name,
         title: title,
-        postValue: postValue,
         date: date.getDate() + " мая",
         time:
           date.getHours() +
@@ -33,14 +32,19 @@ function Input() {
   }
   return (
     <div className="input">
-      <div className="inputPost">
+      <div className="inputPost" style={darkMode ? themeColor.post : null}>
         <textarea
           placeholder="What's happening?"
           value={title}
           onChange={(e) => setTitle(e.target.value)}
+          style={darkMode ? themeColor.textarea : null}
         />
 
-        <button className="addButton" onClick={addPost}>
+        <button
+          className="addButton"
+          onClick={addPost}
+          style={darkMode ? themeColor.buttonInput : null}
+        >
           <Link to={"/task"}>ADD NEW!</Link>
         </button>
       </div>
