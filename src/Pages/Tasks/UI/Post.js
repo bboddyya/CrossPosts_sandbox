@@ -31,7 +31,7 @@ function Post() {
                     {picture ? (
                       <img src={picture} alt="" className="picture" />
                     ) : (
-                      <span className="lnr lnr-user profilePicture" />
+                      <div className="lnr lnr-user profilePicture" />
                     )}
                   </div>
                   <div className="postHeader">{author}</div>
