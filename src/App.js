@@ -11,6 +11,8 @@ import About from "./Pages/About/About";
 import ThemeSwitch from "./Themes/ThemeSwitch";
 import themeColor from "./Themes/themeColor";
 
+// TODO: Delete this line
+
 function App() {
   const [tasks, setTasks] = useState(defaultPosts);
   const [name, setName] = useState("");
