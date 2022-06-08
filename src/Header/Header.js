@@ -2,7 +2,6 @@ import React, { useContext } from "react";
 import ProfileButton from "./ProfileButton";
 import CreditButton from "./CreditButton";
 import TaskButton from "./TaskButton";
-import mops from "../img/Cross Posts.png";
 import { Link } from "react-router-dom";
 import { Context } from "../Context";
 import ThemeSwitch from "../Themes/ThemeSwitch";

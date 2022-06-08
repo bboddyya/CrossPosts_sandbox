@@ -1,6 +1,7 @@
 import React, { useContext } from "react";
 import "./Posts.css";
 import { Context } from "../../../Context";
+import { Link } from "react-router-dom";
 
 function Post() {
   const { tasks, darkMode, themeColor } = useContext(Context);
@@ -21,6 +22,7 @@ function Post() {
             picture,
           }) => {
             return (
+              // <Link to={"/tasks/id"}>
               <div
                 key={id}
                 className="post"
@@ -69,6 +71,7 @@ function Post() {
                   </span>
                 </div>
               </div>
+              // </Link>
             );
           }
         )

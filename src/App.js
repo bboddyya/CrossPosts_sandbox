@@ -8,8 +8,9 @@ import defaultPosts from "./Posts/defaultPosts";
 import { Context } from "./Context";
 import Profile from "./Pages/Profile/Profile";
 import About from "./Pages/About/About";
-import ThemeSwitch from "./Themes/ThemeSwitch";
 import themeColor from "./Themes/themeColor";
+import Login from "./Login/Login";
+import SinglePost from "./Pages/SinglePost/SinglePost";
 
 function App() {
   const [tasks, setTasks] = useState(defaultPosts);
@@ -37,10 +38,11 @@ function App() {
     >
       <div className="App" style={darkMode ? themeColor.body : null}>
         <Header />
-
+        <Login />
         <Routes>
           <Route path="/" element={<About />} />
           <Route path="/about" element={<About />} />
+          <Route path="/task/:id" element={<SinglePost />} />
           <Route path="/credit" element={<Credit />} />
           <Route path="/task" element={<Tasks />} />
           <Route path="/profile" element={<Profile />} />
