@@ -35,4 +35,5 @@ body {
       hsl(0deg 2% 82%) 100%
     )
     no-repeat;
+  scroll-behavior: smooth;
 }
