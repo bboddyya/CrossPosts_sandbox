@@ -34,6 +34,15 @@ const themeColor = {
   likesShareRepost: {
     color: "#3b4144",
   },
+
+  profilePicture: {
+    color: "white",
+    borderColor: "white",
+  },
+
+  pictureBorder: {
+    borderColor: "white",
+  },
 };
 
 export default themeColor;

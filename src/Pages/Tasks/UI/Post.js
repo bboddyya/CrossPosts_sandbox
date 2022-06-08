@@ -29,9 +29,17 @@ function Post() {
                 <div className="headerWrapper">
                   <div className="pictureWrapper">
                     {picture ? (
-                      <img src={picture} alt="" className="picture" />
+                      <img
+                        src={picture}
+                        alt=""
+                        className="picture"
+                        style={darkMode ? themeColor.pictureBorder : null}
+                      />
                     ) : (
-                      <div className="lnr lnr-user profilePicture" />
+                      <div
+                        className="lnr lnr-user profilePicture"
+                        style={darkMode ? themeColor.profilePicture : null}
+                      />
                     )}
                   </div>
                   <div className="postHeader">{author}</div>
