@@ -1,10 +1,10 @@
 import React, { useContext } from "react";
 import "./Posts.css";
 import { Context } from "../../../Context";
-import { Link } from "react-router-dom";
+import { Link, Switch } from "react-router-dom";
 
 function Post() {
-  const { tasks, darkMode, themeColor } = useContext(Context);
+  const { tasks, darkMode, themeColor, SinglePost } = useContext(Context);
 
   return (
     <div className="postWrapper">
@@ -22,12 +22,8 @@ function Post() {
             picture,
           }) => {
             return (
-              <Link to={"/tasks/" + id}>
-                <div
-                  key={id}
-                  className="post"
-                  style={darkMode ? themeColor.post : null}
-                >
+              <Link to={`/tasks/${id}`} key={id}>
+                <div className="post" style={darkMode ? themeColor.post : null}>
                   <div className="headerWrapper">
                     <div className="pictureWrapper">
                       {picture ? (

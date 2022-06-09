@@ -34,6 +34,7 @@ function App() {
         themeColor,
         darkMode,
         setDarkMode,
+        SinglePost,
       }}
     >
       <div className="App" style={darkMode ? themeColor.body : null}>
@@ -42,7 +43,7 @@ function App() {
         <Routes>
           <Route path="/" element={<About />} />
           <Route path="/about" element={<About />} />
-          <Route path="/task/:id" element={<SinglePost />} />
+          <Route path="tasks/:id" element={<SinglePost />} />
           <Route path="/credit" element={<Credit />} />
           <Route path="/task" element={<Tasks />} />
           <Route path="/profile" element={<Profile />} />
