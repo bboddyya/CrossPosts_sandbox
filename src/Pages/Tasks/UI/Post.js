@@ -1,10 +1,10 @@
 import React, { useContext } from "react";
 import "./Posts.css";
 import { Context } from "../../../Context";
-import { Link, Switch } from "react-router-dom";
+import { Link } from "react-router-dom";
 
 function Post() {
-  const { tasks, darkMode, themeColor, SinglePost } = useContext(Context);
+  const { tasks, darkMode, themeColor } = useContext(Context);
 
   return (
     <div className="postWrapper">
