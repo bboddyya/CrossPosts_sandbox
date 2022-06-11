@@ -18,6 +18,7 @@ function App() {
   const [title, setTitle] = useState("");
   const [postValue, setPostValue] = useState("");
   const [darkMode, setDarkMode] = useState(false);
+  const [login, setLogin] = useState(false);
 
   return (
     <Context.Provider
@@ -35,6 +36,8 @@ function App() {
         darkMode,
         setDarkMode,
         SinglePost,
+        login,
+        setLogin,
       }}
     >
       <div className="App" style={darkMode ? themeColor.body : null}>

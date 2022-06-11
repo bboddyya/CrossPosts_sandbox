@@ -43,6 +43,10 @@ const themeColor = {
   pictureBorder: {
     borderColor: "white",
   },
+
+  dateAndlikes: {
+    color: "#D0F2F0",
+  },
 };
 
 export default themeColor;

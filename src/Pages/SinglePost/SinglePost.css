@@ -43,3 +43,19 @@
 
   overflow: auto;
 }
+
+.singlePostWrapper .likesShareRepost {
+  word-spacing: 2px;
+  margin-left: 20px;
+  color: rgb(125, 125, 125);
+  font-weight: 300;
+  font-size: 20px;
+}
+
+.singlePostWrapper .postDate {
+  margin-left: 20px;
+  word-spacing: 2px;
+  color: rgb(125, 125, 125);
+  margin-bottom: 13px;
+  font-size: 20px;
+}

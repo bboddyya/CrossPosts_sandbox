@@ -29,10 +29,15 @@ function SinglePost() {
 
         <div className="singlePostName">{author}</div>
       </div>
-      <div className="singlePostTitle">{title}</div>
+      <div
+        className="singlePostTitle"
+        style={darkMode ? themeColor.post : null}
+      >
+        {title}
+      </div>
       <div
         className="postDate"
-        style={darkMode ? themeColor.likesShareRepost : null}
+        style={darkMode ? themeColor.dateAndlikes : null}
       >
         {time}
         {" · "}
@@ -40,7 +45,7 @@ function SinglePost() {
       </div>
       <div
         className="likesShareRepost"
-        style={darkMode ? themeColor.likesShareRepost : null}
+        style={darkMode ? themeColor.dateAndlikes : null}
       >
         <span className="likes">
           <strong>{likes}</strong> Лайков
