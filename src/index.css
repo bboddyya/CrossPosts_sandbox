@@ -8,8 +8,8 @@ html {
 body {
   margin: 0;
   padding: 0;
-  height: 100vh;
-
+  /* height: 100vh; */
+  height: auto;
   width: 100%;
   background-color: #e8f7fc;
   font-family: "Barlow", sans-serif;

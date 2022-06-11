@@ -13,7 +13,7 @@ function ThemeSwitch() {
     <div className="themeWrapper">
       <button className="themeSwitch" onClick={toogleThemeSwitch}>
         {darkMode ? (
-          <span class="lnr lnr-sun" style={{ color: "#b0bac2" }} />
+          <span className="lnr lnr-sun" style={{ color: "#b0bac2" }} />
         ) : (
           <span className="lnr lnr-moon" />
         )}

@@ -13,7 +13,10 @@ function SinglePost() {
   return (
     <div className="singlePostWrapper">
       <div className="singlePostHeader">
-        <div className="singlePostPhoto">
+        <div
+          className="singlePostPhoto"
+          style={picture ? { display: "block" } : { display: "none" }}
+        >
           {picture ? (
             <img
               src={picture}
@@ -21,18 +24,34 @@ function SinglePost() {
               className="picture"
               style={darkMode ? themeColor.pictureBorder : null}
             />
-          ) : (
-            <div
-              className="lnr lnr-user profilePicture"
-              style={darkMode ? themeColor.profilePicture : null}
-            />
-          )}
+          ) : null}
         </div>
 
         <div className="singlePostName">{author}</div>
       </div>
-      <h2>{time}</h2>
-      <h3>{likes}</h3>
+      <div className="singlePostTitle">{title}</div>
+      <div
+        className="postDate"
+        style={darkMode ? themeColor.likesShareRepost : null}
+      >
+        {time}
+        {" · "}
+        {date}, 2022
+      </div>
+      <div
+        className="likesShareRepost"
+        style={darkMode ? themeColor.likesShareRepost : null}
+      >
+        <span className="likes">
+          <strong>{likes}</strong> Лайков
+        </span>
+        <span className="replies">
+          <strong>{replies}</strong> Ответов
+        </span>
+        <span className="shares">
+          <strong>{shares}</strong> Репостов
+        </span>
+      </div>
     </div>
   );
 }

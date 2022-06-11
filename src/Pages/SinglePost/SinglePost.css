@@ -3,20 +3,43 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  padding-bottom: 30px;
+  width: 88%;
 }
 
 .singlePostHeader {
   display: flex;
   flex-direction: row;
-  border-bottom: solid blue 1px;
+  border-bottom: solid rgb(103, 180, 251) 3px;
   align-items: center;
   justify-content: center;
+  width: 80%;
+  margin-top: 30px;
 }
 
 .singlePostPhoto {
+  width: 100px;
+  height: 100px;
+  margin-right: 30px;
+  margin-bottom: 10px;
 }
 
-.singlePostPhoto .lnr-user {
-  font-size: 100px;
-  color: rgb(112, 170, 246);
+.singlePostName {
+  font-size: 50px;
+  color: white;
+  font-weight: 700;
+}
+
+.singlePostTitle {
+  display: inline-block;
+  background-color: rgba(252, 254, 255, 0.728);
+  width: 90%;
+  font-size: 25px;
+  border-radius: 20px;
+  margin-top: 10px;
+  padding: 30px;
+  word-wrap: break-word;
+  text-align: center;
+
+  overflow: auto;
 }
