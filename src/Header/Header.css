@@ -74,26 +74,26 @@ a {
   color: white;
 }
 
-/* .plus {
-  fill: white;
-  width: 30px;
-  position: absolute;
-  right: 0px;
-  bottom: 0px;
-}  */
-
 img {
   width: 150px;
   height: 150px;
   cursor: pointer;
 }
 
-@media (max-width: 1050px) {
-  img {
-    width: 130px;
-    height: 130px;
+@media (max-width: 1620px) {
+  .header-link,
+  .credit {
+    font-size: 25px;
   }
+}
 
+@media (max-width: 1300px) {
+}
+
+@media (max-width: 1157px) {
+}
+
+@media (max-width: 1050px) {
   .header-link,
   .credit {
     font-size: 30px;
@@ -101,13 +101,48 @@ img {
 }
 
 @media (max-width: 911px) {
-  img {
-    width: 120px;
-    height: 120px;
+  .header-link,
+  .credit {
+    font-size: 25px;
+  }
+}
+
+@media (max-width: 793px) {
+  header {
+    min-width: 100%;
+    max-height: 10%;
+    display: flex;
+    flex-direction: row;
+    background-color: transparent;
+    align-items: center;
+    justify-content: space-evenly;
+    flex: 1 1 17%;
+    padding: 10px;
+    padding-bottom: 0px;
+    z-index: 2;
+    background-color: white;
+    /* position: absolute; */
+    /* top: 0; */
+
+    /* position: relative; */
+    margin: 0;
   }
 
   .header-link,
   .credit {
-    font-size: 25px;
+    font-size: 20px;
+    margin: 0px;
+    margin-right: 10px;
+  }
+
+  .crossTitle {
+    font-size: 20px;
+    margin: 0px;
+    margin-right: 10px;
+  }
+
+  .header-link {
+    width: 50px;
+    padding: 5px;
   }
 }

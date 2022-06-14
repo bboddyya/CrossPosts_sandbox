@@ -20,8 +20,6 @@ function App() {
   const [darkMode, setDarkMode] = useState(false);
   const [login, setLogin] = useState(false);
 
-  //test
-
   return (
     <Context.Provider
       value={{

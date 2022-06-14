@@ -138,29 +138,33 @@ strong {
     padding: 10px;
   }
   .postHeader {
-    font-size: 12px;
+    font-size: 13px;
     margin-top: 15px;
     height: 10px;
   }
 
   .postTitle {
-    font-size: 17px;
+    font-size: 18px;
   }
 }
 
 @media (max-width: 1157px) {
+  .postWrapper a {
+    width: 65%;
+  }
+
   .post {
     min-height: 215px;
     padding: 10px;
   }
   .postHeader {
-    font-size: 11px;
+    font-size: 13px;
     margin-top: 14px;
     height: 9px;
   }
 
   .postTitle {
-    font-size: 16px;
+    font-size: 17px;
   }
 }
 
@@ -170,28 +174,56 @@ strong {
     padding: 10px;
   }
   .postHeader {
-    font-size: 10px;
+    font-size: 12px;
     margin-top: 14px;
     height: 8px;
   }
 
   .postTitle {
-    font-size: 14px;
+    font-size: 15px;
   }
 }
 
 @media (max-width: 911px) {
+  .postWrapper a {
+    width: 65%;
+  }
+
   .post {
     min-height: 210px;
     padding: 10px;
   }
   .postHeader {
-    font-size: 9px;
+    font-size: 12px;
     margin-top: 14px;
     height: 8px;
   }
 
   .postTitle {
-    font-size: 13px;
+    font-size: 15px;
+  }
+}
+
+@media (max-width: 793px) {
+  .postWrapper {
+    min-width: 100%;
+  }
+
+  .postWrapper a {
+    width: 80%;
+  }
+
+  .post {
+    min-height: 180px;
+    padding: 10px;
+  }
+  .postHeader {
+    font-size: 18px;
+    margin-top: 14px;
+    height: 8px;
+  }
+
+  .postTitle {
+    font-size: 20px;
   }
 }
