@@ -115,7 +115,8 @@ img {
     flex-direction: row;
     background-color: transparent;
     align-items: center;
-    justify-content: space-evenly;
+    /* justify-content: space-evenly; */
+    justify-content: start;
     flex: 1 1 17%;
     padding: 10px;
     padding-bottom: 0px;
@@ -126,6 +127,7 @@ img {
 
     /* position: relative; */
     margin: 0;
+    padding-bottom: 10px;
   }
 
   .header-link,
@@ -144,5 +146,14 @@ img {
   .header-link {
     width: 50px;
     padding: 5px;
+  }
+
+  .credit a {
+    color: rgb(85 188 244);
+  }
+
+  .credit {
+    background-color: transparent;
+    border: none;
   }
 }

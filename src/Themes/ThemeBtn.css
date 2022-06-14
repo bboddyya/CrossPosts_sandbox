@@ -15,3 +15,16 @@
 .lnr-sun {
   color: rgb(14, 162, 253);
 }
+
+@media (max-width: 793px) {
+  .themeWrapper {
+    top: 15px;
+    left: 130px;
+    z-index: 5;
+  }
+
+  /* .lnr-moon,
+  .lnr-sun {
+    z-index: 6;
+  } */
+}
