@@ -18,9 +18,13 @@
 
 @media (max-width: 793px) {
   .themeWrapper {
-    top: 15px;
-    left: 130px;
+    top: 18px;
+    right: 130px;
     z-index: 5;
+  }
+
+  .themeSwitch {
+    font-size: 30px;
   }
 
   /* .lnr-moon,
