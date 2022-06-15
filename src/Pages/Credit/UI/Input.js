@@ -8,6 +8,11 @@ function Input() {
   const { tasks, setTasks, name, title, setTitle, themeColor, darkMode } =
     useContext(Context);
 
+  const handleKeyPress = (e) => {
+    if (e.key === "Enter") {
+      addPost();
+    }
+  };
   function addPost() {
     const date = new Date();
     setTasks([
@@ -38,6 +43,7 @@ function Input() {
           value={title}
           onChange={(e) => setTitle(e.target.value)}
           style={darkMode ? themeColor.textarea : null}
+          onKeyPress={handleKeyPress}
         />
 
         <button
