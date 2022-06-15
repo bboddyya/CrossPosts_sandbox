@@ -5,8 +5,12 @@ import "./Profile.css";
 function Profile() {
   const { name, setName, setLogin } = useContext(Context);
 
-  console.log(typeof name);
   const loginName = () => setLogin(true);
+  const handleKeyPress = (e) => {
+    if (e.key === "Enter") {
+      loginName();
+    }
+  };
   return (
     <div className="profileWrapper">
       <div className="avatar">
@@ -21,6 +25,7 @@ function Profile() {
             setLogin(false);
             setName(e.target.value);
           }}
+          onKeyPress={handleKeyPress}
         />
         <div className="check">
           <span className="lnr lnr-checkmark-circle" onClick={loginName} />

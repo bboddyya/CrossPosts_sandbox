@@ -4,7 +4,7 @@
   right: 50px;
   font-size: 20px;
   transition: all 0.1s ease-in-out;
-  z-index: 0;
+  z-index: 10;
 }
 
 .loginWrapper {
@@ -18,8 +18,9 @@
 }
 
 .nameWrapper {
-  width: 35px;
-  height: 35px;
+  width: 30px;
+  height: 30px;
+  padding: 8px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -28,7 +29,6 @@
   color: white;
   background-color: rgb(114, 157, 226);
   /* padding: 5px 10px; */
-
   transition: all 0.1s ease-in-out;
 }
 
