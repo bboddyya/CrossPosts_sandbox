@@ -16,15 +16,27 @@
   color: rgb(14, 162, 253);
 }
 
-@media (max-width: 793px) {
+@media (max-width: 1157px) {
   .themeWrapper {
-    top: 18px;
-    right: 130px;
+    top: 30px;
+    margin-left: -60px;
     z-index: 5;
   }
 
   .themeSwitch {
-    font-size: 30px;
+    font-size: 27px;
+  }
+}
+
+@media (max-width: 793px) {
+  .themeWrapper {
+    top: 17px;
+    right: 50px;
+    z-index: 5;
+  }
+
+  .themeSwitch {
+    font-size: 25px;
   }
 
   /* .lnr-moon,
