@@ -5,6 +5,7 @@ import "./Profile.css";
 function Profile() {
   const { name, setName, setLogin } = useContext(Context);
 
+  console.log(typeof name);
   const loginName = () => setLogin(true);
   return (
     <div className="profileWrapper">

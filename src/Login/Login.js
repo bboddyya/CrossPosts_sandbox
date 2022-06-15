@@ -6,9 +6,9 @@ import { Link } from "react-router-dom";
 function Login() {
   const { name, login } = useContext(Context);
   function letters(name) {
-    const arr = name.split(" ");
+    const arr = name.toString().split(" ");
     const letters = arr.map((e) => {
-      return e[0].toUpperCase();
+      return e[0];
     });
 
     if (letters.length > 1) {
